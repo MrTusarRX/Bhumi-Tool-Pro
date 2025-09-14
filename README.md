@@ -1,5 +1,4 @@
-<img src="https://github.com/MrTusarRX/Bhumi-Tool-Pro/blob/main/images/icon.png?raw=true" alt="Icon" width="32" height="32">
-# Bhumi-Tool-Pro
+<img src="https://github.com/MrTusarRX/Bhumi-Tool-Pro/blob/main/images/icon.png?raw=true" alt="Icon" width="32" height="32"><b>Bhumi-Tool-Pro<b/>
 
 Bhumi-Tool-Pro is a Chrome browser extension that provides multiple utility features.  
 It helps users with web page manipulation, popup interface, and print-friendly views to make tasks easier.
