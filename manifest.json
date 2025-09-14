@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "Bhumi Tool Pro",
+  "version": "3.1",
+  "description": "Easily print Bangalrbhumi Dag & Khatian Information with just one click. and more creazy features.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://banglarbhumi.gov.in/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Extension Control Panel",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "web_accessible_resources": [
+    "images/header.png"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{81bd8409-eb2f-4245-a8e6-3b4870d71c45}"
+    }
+  }
+}

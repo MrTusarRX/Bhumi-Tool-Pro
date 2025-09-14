@@ -1,0 +1,566 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banglarbhumi Easyprint</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-header">
+    <div class="logo-container">
+      <img class="logo-icon" src="https://raw.githubusercontent.com/MrTusarRX/Controll/refs/heads/main/icon.png" alt="Logo">
+      <h1 class="logo-text">Bhumi Tool <span>Pro</span></h1>
+    </div>
+    <div class="version-badge">v3.1</div>
+  </div>
+
+  <div id="tabs">
+    <button class="tab-button" data-tab="info">
+      <i class="fas fa-home"></i> Home
+    </button>
+    <button class="tab-button" data-tab="username">
+      <i class="fas fa-user"></i> Login
+    </button>
+    <button class="tab-button active" data-tab="ror">
+      <i class="fas fa-file-alt"></i> ROR/PI
+    </button>
+    <button class="tab-button" data-tab="mutation">
+      <i class="fas fa-exchange-alt"></i> Mutation
+    </button>
+    <button class="tab-button" data-tab="grn">
+      <i class="fas fa-search"></i> GRN
+    </button>
+    <button class="tab-button" data-tab="conversion">
+      <i class="fas fa-cog"></i> Settings
+    </button>
+    <button class="tab-button" data-tab="contact">
+      <i class="fas fa-question-circle"></i> Help
+    </button>
+  </div>
+
+  <div id="tabs-content">
+    <div class="tab card" id="info">
+      <h2 class="welcome-title">Welcome to Bhumi Tool Pro</h2>
+      <div class="feature-highlights">
+        <div class="feature-card">
+          <i class="fas fa-bolt"></i>
+          <h3>Powerful Features</h3>
+          <p>The most advanced extension for Banglarbhumi portal related work</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-gift"></i>
+          <h3>Free to Use</h3>
+          <p>Currently available for everyone at no cost</p>
+        </div>
+      </div>
+      
+      <div class="benefits-list">
+        <h3><i class="fas fa-check-circle"></i> Key Benefits:</h3>
+        <ul>
+          <li><i class="fas fa-check"></i> No captcha required</li>
+          <li><i class="fas fa-check"></i> Print dag & khatiyan with one click</li>
+          <li><i class="fas fa-check"></i> Automatically search GRN with one click</li>
+          <li><i class="fas fa-check"></i> Many more time-saving features</li>
+        </ul>
+      </div>
+      
+      <div class="cta-buttons">
+        <a href="https://wa.me/+918617528664" target="_blank" class="cta-button whatsapp">
+          <i class="fab fa-whatsapp"></i> Message Us
+        </a>
+        <a href="https://www.youtube.com/@mrtusarrx1" target="_blank" class="cta-button youtube">
+          <i class="fab fa-youtube"></i> Developer Channel
+        </a>
+      </div>
+      
+      <div class="user-stats">
+        <i class="fas fa-users"></i>
+        <p>Keep Shining, Your Hard Work Fuels Amazing Results!</p>
+      </div>
+    </div>
+
+    <div class="tab" id="username">
+      <div class="form-container">
+        <h2><i class="fas fa-sign-in-alt"></i> Login Details</h2>
+        <div class="input-group">
+          <label for="txtusername"><i class="fas fa-user"></i> Username</label>
+          <input type="text" id="txtusername" name="username" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+          <label for="txtpassword"><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="txtpassword" name="password" placeholder="Enter your password">
+        </div>
+        <button id="save-username" class="save-btn">
+          <i class="fas fa-save"></i> Save Credentials
+        </button>
+        <p class="form-note">Save your Banglarbhumi username & password for quick access</p>
+      </div>
+    </div>
+
+    <div class="tab active" id="ror">
+      <div class="form-container">
+        <h2><i class="fas fa-file-contract"></i> ROR/PI Information</h2>
+        <div class="input-group">
+          <label for="txtName"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="txtName" name="name" placeholder="Enter full name">
+        </div>
+        <div class="input-group">
+          <label for="txtFatherName"><i class="fas fa-user-friends"></i> Father's Name</label>
+          <input type="text" id="txtFatherName" name="fatherName" placeholder="Enter father's name">
+        </div>
+        <div class="input-group">
+          <label for="txtaddress"><i class="fas fa-map-marker-alt"></i> Address</label>
+          <input type="text" id="txtaddress" name="address" placeholder="Enter full address">
+        </div>
+        <button id="save-ror" class="save-btn">
+          <i class="fas fa-save"></i> Save Details
+        </button>
+      </div>
+    </div>
+
+    <div class="tab" id="mutation">
+      <div class="form-container">
+        <h2><i class="fas fa-exchange-alt"></i> Mutation Details</h2>
+        <div class="input-row">
+          <div class="input-group half-width">
+            <label for="txtFirstname"><i class="fas fa-user"></i> First Name</label>
+            <input type="text" id="txtFirstname" name="firstName" placeholder="First name">
+          </div>
+          <div class="input-group half-width">
+            <label for="txtLastName"><i class="fas fa-user"></i> Last Name</label>
+            <input type="text" id="txtLastName" name="lastName" placeholder="Last name">
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="txtFatherNameMutation"><i class="fas fa-user-friends"></i> Father's Name</label>
+          <input type="text" id="txtFatherNameMutation" name="fatherNameMutation" placeholder="Father's name">
+        </div>
+        <div class="input-group">
+          <label for="txtaddressMutation"><i class="fas fa-map-marker-alt"></i> Address</label>
+          <input type="text" id="txtaddressMutation" name="addressMutation" placeholder="Full address">
+        </div>
+        <div class="input-group">
+          <label for="txtMobile"><i class="fas fa-phone"></i> Mobile Number</label>
+          <input type="text" id="txtMobile" name="Mobile" placeholder="10-digit mobile number">
+        </div>
+
+          <label for="areaUnit">এরিয়া ইউনিট (Share Area):</label>
+  <select id="areaUnit">
+    <option value="">এরিয়া ইউনিট নির্বাচন করুন</option>
+    <option value="1">sq. feet</option>
+    <option value="2">sq.metre</option>
+    <option value="3">cottah</option>
+    <option value="4">acre</option>
+  </select>
+
+  <label for="purposeCode">উদ্দেশ্য কোড (Purpose of Mutation):</label>
+  <select id="purposeCode">
+    <option value="">উদ্দেশ্য নির্বাচন করুন</option>
+    <option value="01">agriculture</option>
+    <option value="02">homestead and non-agri</option>
+    <option value="03">waterbody</option>
+    <option value="04">industry</option>
+    <option value="06">Activities allied to Agriculture</option>
+    <option value="07">Commercial activity</option>
+    <option value="09">Non Agri Commercial Homestead</option>
+  </select>
+
+  <label for="landCode">জমির কোড (Land Classification):</label>
+  <select id="landCode">
+    <option value="">জমির কোড নির্বাচন করুন</option>
+    <option value="001">[001] অগভীর নলকূপ</option>
+    <option value="002">[002] অর্জ্জুন বাগান</option>
+    <option value="003">[003] আংটি</option>
+    <option value="004">[004] আউশ</option>
+    <option value="005">[005] আড়া</option>
+    <option value="006">[006] আদালত</option>
+    <option value="007">[007] আনারস বাগান</option>
+    <option value="008">[008] আমন</option>
+    <option value="009">[009] আশ্রম</option>
+    <option value="010">[010] ইটখোলা</option>
+    <option value="011">[011] ইন্দারা</option>
+    <option value="012">[012] ঈদগা</option>
+    <option value="013">[013] ওয়ারলেস ভবন</option>
+    <option value="014">[014] কবরস্থান</option>
+    <option value="015">[015] কল</option>
+    <option value="016">[016] কলাবাগান</option>
+    <option value="017">[017] কলেজ</option>
+    <option value="018">[018] কাঁদোড়</option>
+    <option value="019">[019] কাছারী</option>
+    <option value="020">[020] কাঠগোলা</option>
+    <option value="021">[021] কারখানা</option>
+    <option value="022">[022] কারবালা</option>
+    <option value="023">[023] কুঠি</option>
+    <option value="024">[024] কৃষিখামার</option>
+    <option value="025">[025] কোরবানী স্থান</option>
+    <option value="026">[026] ক্যানেল</option>
+    <option value="027">[027] ক্যালেল পাড়</option>
+    <option value="028">[028] খড়</option>
+    <option value="029">[029] খড়িবন</option>
+    <option value="030">[030] খামার</option>
+    <option value="031">[031] খাল</option>
+    <option value="032">[032] খেয়াঘাট</option>
+    <option value="033">[033] খেলারমাঠ</option>
+    <option value="034">[034] গড়লায়েক</option>
+    <option value="035">[035] গভীর নলকূপ</option>
+    <option value="036">[036] গির্জ্জা</option>
+    <option value="037">[037] গো পথ</option>
+    <option value="038">[038] গোচর</option>
+    <option value="039">[039] গোচর স্থান</option>
+    <option value="040">[040] গোচারন ভূমি</option>
+    <option value="041">[041] গোয়াল বাড়ী</option>
+    <option value="042">[042] গোয়ালঘর</option>
+    <option value="043">[043] চর</option>
+    <option value="044">[044] জঙ্গল</option>
+    <option value="045">[045] জলাভূমি</option>
+    <option value="046">[046] জেলখানা</option>
+    <option value="047">[047] ঝিল</option>
+    <option value="048">[048] টালিখোলা</option>
+    <option value="049">[049] টেলিফোন ভবন</option>
+    <option value="050">[050] ডহর</option>
+    <option value="051">[051] ডাকঘর</option>
+    <option value="052">[052] ডাকবাংলো</option>
+    <option value="053">[053] ডাক্তারখানা</option>
+    <option value="054">[054] ডাঙ্গা</option>
+    <option value="055">[055] ডিপটিউবওয়েল</option>
+    <option value="056">[056] ডোবা</option>
+    <option value="057">[057] ড্রেন</option>
+    <option value="058">[058] তালবাগান</option>
+    <option value="059">[059] তালবোনা</option>
+    <option value="060">[060] তুঁত</option>
+    <option value="061">[061] থানা</option>
+    <option value="062">[062] দরগা</option>
+    <option value="063">[063] দুগ্ধশালা</option>
+    <option value="064">[064] দেবস্থান</option>
+    <option value="065">[065] দোকান</option>
+    <option value="066">[066] ধর্ম্মশালা</option>
+    <option value="067">[067] নদী</option>
+    <option value="068">[068] নয়নজুলি</option>
+    <option value="069">[069] নলকুপ</option>
+    <option value="070">[070] নালা</option>
+    <option value="071">[071] নূতনপতিত</option>
+    <option value="072">[072] পথ</option>
+    <option value="073">[073] পয়স্তিভুমি</option>
+    <option value="074">[074] পশু প্রজনন ভূমি</option>
+    <option value="076">[076] পাকা রাস্তা</option>
+    <option value="077">[077] পাঠশালা</option>
+    <option value="078">[078] পাঠাগার</option>
+    <option value="079">[079] পানবোরজ</option>
+    <option value="080">[080] পায়খানা</option>
+    <option value="081">[081] পার্ক</option>
+    <option value="082">[082] পীরস্থান</option>
+    <option value="083">[083] পুকুর</option>
+    <option value="084">[084] পুকুরপাড়</option>
+    <option value="085">[085] পুরাতনপতিত</option>
+    <option value="086">[086] পুলিশলাইন</option>
+    <option value="087">[087] পেট্রলপাম্প</option>
+    <option value="088">[088] পোল্ট্রি</option>
+    <option value="089">[089] পোষ্টঅফিস</option>
+    <option value="090">[090] প্রেক্ষাগৃহ</option>
+    <option value="091">[091] ফাঁড়ি</option>
+    <option value="092">[092] বন</option>
+    <option value="093">[093] বাঁধ</option>
+    <option value="094">[094] বাঁশঝাড়</option>
+    <option value="095">[095] বাঁশবাগান</option>
+    <option value="096">[096] বাগান</option>
+    <option value="097">[097] বাজার</option>
+    <option value="098">[098] বাড়ী</option>
+    <option value="099">[099] বালু</option>
+    <option value="100">[100] বালুখাদ</option>
+    <option value="101">[101] বালুচর</option>
+    <option value="102">[102] বালুবাঁধ</option>
+    <option value="103">[103] বাস্তু</option>
+    <option value="104">[104] বিদ্যালয়</option>
+    <option value="105">[105] বিল</option>
+    <option value="106">[106] বোরো</option>
+    <option value="107">[107] ভাগাড়</option>
+    <option value="108">[108] ভিটি</option>
+    <option value="109">[109] মন্দির</option>
+    <option value="110">[110] মসজিদ</option>
+    <option value="111">[111] মাদ্রাসা</option>
+    <option value="112">[112] রাস্তা</option>
+    <option value="113">[113] রেলরাস্তা</option>
+    <option value="114">[114] রেললাইন</option>
+    <option value="115">[115] রেলষ্টেশন</option>
+    <option value="116">[116] লাইব্রেরী</option>
+    <option value="117">[117] শশ্মান</option>
+    <option value="118">[118] শিবস্থান</option>
+    <option value="119">[119] শূকর পালন</option>
+    <option value="120">[120] শ্যলো টিউবওয়েল</option>
+    <option value="121">[121] সমাধি</option>
+    <option value="122">[122] সারডোবা</option>
+    <option value="123">[123] সিকস্তিভূমি</option>
+    <option value="124">[124] সীডফার্ম</option>
+    <option value="125">[125] স্কুল</option>
+    <option value="126">[126] স্টীমার ষ্টেশন</option>
+    <option value="127">[127] স্টেডিয়াম</option>
+    <option value="128">[128] স্টেশন</option>
+    <option value="129">[129] হাট</option>
+    <option value="130">[130] হাসপাতাল</option>
+    <option value="131">[131] রিভার পাম্প</option>
+    <option value="132">[132] তুঁত</option>
+    <option value="133">[133] খামার বাড়ী</option>
+    <option value="134">[134] সিনেমা হল</option>
+    <option value="135">[135] পাকা বাড়ী</option>
+    <option value="136">[136] আস্তাবর</option>
+    <option value="137">[137] কুড়ে ঘর</option>
+    <option value="138">[138] বাগান বাড়ী</option>
+    <option value="139">[139] লাল বাড়ী</option>
+    <option value="140">[140] রাজবাড়ী</option>
+    <option value="141">[141] ক্লাব ঘর</option>
+    <option value="142">[142] হোগলাবন</option>
+    <option value="143">[143] কলঘর</option>
+    <option value="144">[144] পগার</option>
+    <option value="145">[145] তেলকল</option>
+    <option value="146">[146] আইল</option>
+    <option value="147">[147] গড়ে</option>
+    <option value="148">[148] সড়ক</option>
+    <option value="149">[149] গোড়হর</option>
+    <option value="150">[150] সৌয়ম</option>
+    <option value="151">[151] দৌয়ম</option>
+    <option value="152">[152] পোল ফ্যাক্টরী</option>
+    <option value="153">[153] রাইসমিল</option>
+    <option value="154">[154] আওয়াল</option>
+    <option value="155">[155] বাইদ</option>
+    <option value="156">[156] বাঁশ</option>
+    <option value="157">[157] কুয়া</option>
+    <option value="158">[158] দিঘী</option>
+    <option value="159">[159] চাঁদমারী</option>
+    <option value="160">[160] ছনঘর</option>
+    <option value="161">[161] অফিস</option>
+    <option value="162">[162] গোডাউন</option>
+    <option value="163">[163] পতিত</option>
+    <option value="164">[164] জলের ট্যাংক</option>
+    <option value="165">[165] পাওয়ার হাউস</option>
+    <option value="166">[166] গুদামঘর</option>
+    <option value="167">[167] গড়লায়েক পতিত</option>
+    <option value="168">[168] গর্ত</option>
+    <option value="169">[169] কালীস্থান</option>
+    <option value="170">[170] মিলঘর</option>
+    <option value="171">[171] হোটেল</option>
+    <option value="172">[172] রিসর্ট</option>
+    <option value="173">[173] টাউনশীপ</option>
+    <option value="174">[174] কমার্সিয়াল বাস্তু</option>
+    <option value="175">[175] ইন্ডাস্ট্রীয়াল পার্ক</option>
+    <option value="176">[176] বাস টার্মিনাস</option>
+    <option value="177">[177] হিমঘর</option>
+  </select>
+
+        
+        <button id="save-mutation" class="save-btn">
+          <i class="fas fa-save"></i> Save Seller Details
+        </button>
+        <p class="form-note">Save seller details for mutation application</p>
+      </div>
+    </div>
+
+    <div class="tab" id="grn">
+      <div class="grn-container">
+        <h2><i class="fas fa-search"></i> GRN Management</h2>
+        
+        <div class="grn-form-container">
+          <form id="grn-form" class="grn-form">
+            <div class="input-row">
+              <div class="input-group half-width">
+                <label for="grn-input"><i class="fas fa-hashtag"></i> GRN Number</label>
+                <input type="text" id="grn-input" placeholder="Enter GRN" required>
+              </div>
+              <div class="input-group half-width">
+                <label for="ror-input"><i class="fas fa-file-invoice"></i> ROR/PI Number</label>
+                <input type="text" id="ror-input" placeholder="Enter ROR/PI" required>
+              </div>
+            </div>
+            <button type="submit" class="grn-add-btn">
+              <i class="fas fa-plus-circle"></i> Add GRN Details
+            </button>
+          </form>
+          
+          <button id="start-automation" class="grn-check-btn">
+            <i class="fas fa-play-circle"></i> Check All GRN Status
+          </button>
+        </div>
+        
+        <div class="grn-table-container">
+          <table id="grn-table">
+            <thead>
+              <tr>
+                <th>SL No</th>
+                <th>GRN Number</th>
+                <th>ROR/PI Number</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="no-data">
+                <td colspan="5">
+                  <i class="fas fa-database"></i> No GRN data available
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab" id="conversion">
+      <div class="settings-container">
+        <h2><i class="fas fa-sliders-h"></i> Extension Settings</h2>
+        
+        <div class="settings-grid">
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-sign-in-alt"></i>
+              <span class="toggle-text">Auto Fill user&pass</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="autoLogin">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-robot"></i>
+              <span class="toggle-text">Auto Captcha</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="autoCaptcha">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-file-alt"></i>
+              <span class="toggle-text">Khatian Print</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="khatianPrint">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-map-marked-alt"></i>
+              <span class="toggle-text">Plot Print</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="plotPrint">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-file-contract"></i>
+              <span class="toggle-text">ROR/PI Auto Fill</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="rorAutoFill">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-exchange-alt"></i>
+              <span class="toggle-text">Mutation Auto Fill</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="mutationAutoFill">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-search"></i>
+              <span class="toggle-text">GRN Auto Click</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="grnAutoClick">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-comment-dots"></i>
+              <span class="toggle-text">Chat Bot</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="chatbot">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="toggle-item">
+            <div class="toggle-content">
+              <i class="fas fa-exclamation-triangle"></i>
+              <span class="toggle-text">Disclaimer</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="disclaimer">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+            <br>
+           <br>
+      </div>
+    </div>
+
+    <div class="tab" id="contact">
+      <div class="help-container">
+        <h2><i class="fas fa-hands-helping"></i> Need Help?</h2>
+        
+        <div class="contact-methods">
+          <div class="contact-card whatsapp-card">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp Support</h3>
+            <p>Get instant help from our support team</p>
+            <a href="https://wa.me/918617528664?text=Hello%20Tusar,%20I%20need%20help%20with%20Bhumi%20Tool%20Pro" 
+               target="_blank" class="contact-btn">
+              Chat Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          
+          <div class="contact-card youtube-card">
+            <div class="contact-icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <h3>Video Tutorials</h3>
+            <p>Learn how to use all features</p>
+            <a href="https://www.youtube.com/channel/UCE6n_auZmfjVpWJaYkvy_kw" 
+               target="_blank" class="contact-btn">
+              Watch Videos <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="developer-info">
+          <div class="developer-avatar">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="developer-details">
+            <h3>Developed By Tusar Khan</h3>
+            <p>Passionate developer creating tools to simplify your work</p>
+          </div>
+        </div>
+        
+        <div class="bengali-note">
+          <p><i class="fas fa-info-circle"></i> আমাদের এই youtube channel টি সাবস্ক্রাইব করে রাখুন এবং কোন সমস্যা হলে আমাদের Whatsapp এ অবশ্যই জানান ধন্যবাদ।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
