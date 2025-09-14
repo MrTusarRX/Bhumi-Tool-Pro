@@ -1,4 +1,6 @@
-<img src="https://github.com/MrTusarRX/Bhumi-Tool-Pro/blob/main/images/icon.png?raw=true" alt="Icon" width="40" height="40"><h1><b>Bhumi-Tool-Pro</b></h1>
+<img src="https://github.com/MrTusarRX/Bhumi-Tool-Pro/blob/main/images/icon.png?raw=true" alt="Icon" width="40" height="40" style="vertical-align: middle;">
+<span style="font-size: 2em; font-weight: bold; vertical-align: middle;">Bhumi-Tool-Pro</span>
+
 
 
 
